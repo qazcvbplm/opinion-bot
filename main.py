@@ -33,20 +33,7 @@ MAX_BUY_VOL = float(os.getenv('MAX_BUY_VOL'))
 BUY_PRICE_MAX = float(os.getenv('BUY_PRICE_MAX'))
 BUY_PRICE_MIN = float(os.getenv('BUY_PRICE_MIN'))
 BUY_ITEM_AMOUNT = float(os.getenv('BUY_ITEM_AMOUNT'))
-def double_base64_with_p_decode(token):
-    # 等待用户输入加密后的字符串
-    try:
-        # 第一次 Base64 解码
-        first_decoded = base64.b64decode(token).decode('utf-8')
-        # 去掉前后的 'p'
-        if not (first_decoded.startswith('p') and first_decoded.endswith('p')):
-            print("格式错误")
-            return
-        trimmed = first_decoded[1:-1]
-        # 第二次 Base64 解码
-        original_text = base64.b64decode(trimmed).decode('utf-8')
-    finally:
-        return original_text
+
 
 
 def init():
