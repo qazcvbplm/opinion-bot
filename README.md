@@ -1,3 +1,11 @@
+将项目下载下来解压到d盘下
+输入命令 cd  d:\\opinion-bot  (opinion-bot项目路径) 
+输入命令 d:
+输入命令 pip install -r requirements.txt
+然后根据配置文件 .example配置好你的策略的钱包,然后将文件名改成.env
+最后输入命令 python main.py
+
+
 ✅ 一、下载安装 Python（官方方式）
 1️⃣ 打开官网
 
@@ -74,27 +82,9 @@ pip --version
 
 勾选 Add Python to PATH
 
-Next → Install
+安装完成python之后Win + R → 输入 cmd → 回车
 
-❓ 出现 Microsoft Store
 
-Windows 有时会劫持 python
 
-✅ 解决：
 
-打开 设置
 
-搜索 应用执行别名
-
-关闭：
-
-python.exe
-
-python3.exe
-
-✅ 五、（可选）安装开发工具
-升级 pip（推荐）
-python -m pip install --upgrade pip
-
-安装常用库测试
-pip install requests
