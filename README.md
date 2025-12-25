@@ -1,9 +1,15 @@
 将项目下载下来解压到d盘下
+
 输入命令 cd  d:\\opinion-bot  (opinion-bot项目路径) 
+
 输入命令 d:
+
 输入命令 pip install -r requirements.txt
+
 然后根据配置文件 .example配置好你的策略的钱包,然后将文件名改成.env
+
 最后输入命令 python main.py
+
 
 
 ✅ 一、下载安装 Python（官方方式）
