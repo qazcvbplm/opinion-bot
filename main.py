@@ -1,7 +1,4 @@
 
-
-
-
 import os
 import time
 from dotenv import load_dotenv
@@ -40,7 +37,7 @@ def init():
     global client
     global des
     des = []
-    proxy = 'http://127.0.0.1:7890'  # ← 改成你的代理地址
+    proxy = os.getenv('proxy')  # ← 改成你的代理地址
     proxy_manager = urllib3.ProxyManager(proxy)
 
     # 修改 RESTClientObject，使其所有实例都使用这个代理池
